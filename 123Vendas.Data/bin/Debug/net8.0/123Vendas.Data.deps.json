@@ -1,0 +1,39 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v8.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v8.0": {
+      "123Vendas.Data/1.0.0": {
+        "dependencies": {
+          "123Vendas.Domain": "1.0.0"
+        },
+        "runtime": {
+          "123Vendas.Data.dll": {}
+        }
+      },
+      "123Vendas.Domain/1.0.0": {
+        "runtime": {
+          "123Vendas.Domain.dll": {
+            "assemblyVersion": "1.0.0",
+            "fileVersion": "1.0.0.0"
+          }
+        }
+      }
+    }
+  },
+  "libraries": {
+    "123Vendas.Data/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "123Vendas.Domain/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}

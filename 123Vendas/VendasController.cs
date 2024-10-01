@@ -1,6 +1,6 @@
 namespace _123Vendas
 {
-    public class WeatherForecast
+    public class VendasController
     {
         public DateOnly Date { get; set; }
 

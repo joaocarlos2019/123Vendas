@@ -1,0 +1,16 @@
+C:\Users\JOAO\Documents\GitHub\123Vendas\123Vendas.Data\bin\Debug\net8.0\123Vendas.Data.deps.json
+C:\Users\JOAO\Documents\GitHub\123Vendas\123Vendas.Data\bin\Debug\net8.0\123Vendas.Data.dll
+C:\Users\JOAO\Documents\GitHub\123Vendas\123Vendas.Data\bin\Debug\net8.0\123Vendas.Data.pdb
+C:\Users\JOAO\Documents\GitHub\123Vendas\123Vendas.Data\bin\Debug\net8.0\123Vendas.Domain.dll
+C:\Users\JOAO\Documents\GitHub\123Vendas\123Vendas.Data\bin\Debug\net8.0\123Vendas.Domain.pdb
+C:\Users\JOAO\Documents\GitHub\123Vendas\123Vendas.Data\obj\Debug\net8.0\123Vendas.Data.csproj.AssemblyReference.cache
+C:\Users\JOAO\Documents\GitHub\123Vendas\123Vendas.Data\obj\Debug\net8.0\123Vendas.Data.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\JOAO\Documents\GitHub\123Vendas\123Vendas.Data\obj\Debug\net8.0\123Vendas.Data.AssemblyInfoInputs.cache
+C:\Users\JOAO\Documents\GitHub\123Vendas\123Vendas.Data\obj\Debug\net8.0\123Vendas.Data.AssemblyInfo.cs
+C:\Users\JOAO\Documents\GitHub\123Vendas\123Vendas.Data\obj\Debug\net8.0\123Vendas.Data.csproj.CoreCompileInputs.cache
+C:\Users\JOAO\Documents\GitHub\123Vendas\123Vendas.Data\obj\Debug\net8.0\123Vendas.Data.sourcelink.json
+C:\Users\JOAO\Documents\GitHub\123Vendas\123Vendas.Data\obj\Debug\net8.0\123Venda.17BA9AAA.Up2Date
+C:\Users\JOAO\Documents\GitHub\123Vendas\123Vendas.Data\obj\Debug\net8.0\123Vendas.Data.dll
+C:\Users\JOAO\Documents\GitHub\123Vendas\123Vendas.Data\obj\Debug\net8.0\refint\123Vendas.Data.dll
+C:\Users\JOAO\Documents\GitHub\123Vendas\123Vendas.Data\obj\Debug\net8.0\123Vendas.Data.pdb
+C:\Users\JOAO\Documents\GitHub\123Vendas\123Vendas.Data\obj\Debug\net8.0\ref\123Vendas.Data.dll
