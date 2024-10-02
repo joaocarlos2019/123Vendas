@@ -10,6 +10,6 @@ namespace _123Vendas.Data.Interfaces
 
         Task<bool> AtualizarVenda(Venda venda);
 
-        Task<bool> ExcluirVenda(Venda venda);
+        Task<bool> ExcluirVenda(int idVenda);
     }
 }

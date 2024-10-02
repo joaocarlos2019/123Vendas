@@ -22,7 +22,7 @@ namespace _123Vendas.Data
         {
             var updated = false;
             var NumberIndex = _listVenda.FindIndex(x => x.NumeroDaVenda == venda.NumeroDaVenda);
-            if (NumberIndex > 0)
+            if (NumberIndex >=0)
             {
                 _listVenda.RemoveAt(NumberIndex);
                 _listVenda.Add(venda);
@@ -31,11 +31,11 @@ namespace _123Vendas.Data
             return updated;
         }
 
-        public async Task<bool> ExcluirVenda(Venda venda)
+        public async Task<bool> ExcluirVenda(int idVenda)
         {
             var removed = false;
-            var NumberIndex = _listVenda.FindIndex(x => x.NumeroDaVenda == venda.NumeroDaVenda);
-            if (NumberIndex > 0)
+            var NumberIndex = _listVenda.FindIndex(x => x.NumeroDaVenda == idVenda);
+            if (NumberIndex >=0)
             {
                 _listVenda.RemoveAt(NumberIndex);               
                 removed = true;
