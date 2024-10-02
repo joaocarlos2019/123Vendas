@@ -11,8 +11,17 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <PackageReference Include="Asp.Versioning.Mvc.ApiExplorer" Version="8.1.0" />
+    <PackageReference Include="AutoMapper" Version="13.0.1" />
+    <PackageReference Include="AutoMapper.Extensions" Version="2.1.0" />
     <PackageReference Include="Microsoft.VisualStudio.Azure.Containers.Tools.Targets" Version="1.21.0" />
     <PackageReference Include="Swashbuckle.AspNetCore" Version="6.4.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\123Vendas.Data\123Vendas.Data.csproj" />
+    <ProjectReference Include="..\123Vendas.Domain\123Vendas.Domain.csproj" />
+    <ProjectReference Include="..\123Vendas.Service\123Vendas.Service.csproj" />
   </ItemGroup>
 
 </Project>

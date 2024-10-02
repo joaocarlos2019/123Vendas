@@ -13,3 +13,4 @@ Pode se rodar os testes unitários se necessário para testar alguns métodos da
 
 #Sobre o Desenvolvimento da Aplicação
 A camada do repositório foi desenvolvida utilizando List para facilitar o teste e desenvolvimento da aplicação sem a necessidade de inclusão de um banco ou entity framework objetivando deixar mais fácil o start da aplicação para quem for testar.Foram Criados os eventos de publicação  utilizando NotificationHandler do pattern Mediator.Foram Incluidos alguns testes unitários para testar a camada de Repositório.
+

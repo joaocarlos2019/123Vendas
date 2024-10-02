@@ -10,7 +10,7 @@
 
         public Cliente Cliente { get; set; }
 
-        List<VendaItem> ItemVenda { get; set; }
+        public List<VendaItem> ItemVenda { get; set; }
 
 
 
