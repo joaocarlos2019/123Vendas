@@ -29,5 +29,44 @@ namespace _123Vendas.Controllers
             return Ok(vendaViewModel);        
 
         }
+
+
+        [HttpGet("{id:int}")]
+        public async Task<ActionResult<VendaViewModel>> ObterPorId(int id)
+        {
+            var vendaRetorno = _vendaRepository.ObterVenda(id);            
+            var fornecedor = _mapper.Map<VendaViewModel>(await _vendaRepository.ObterVenda(id));
+            if (fornecedor == null) return NotFound();           
+            return Ok(fornecedor);
+        }
+
+
+
+        [HttpPut()]
+        public async Task<ActionResult<VendaViewModel>> Atualizar(VendaViewModel vendaViewModel)
+        {
+            var vendaAtualizar = _mapper.Map<Venda>(vendaViewModel);
+            var vendaFoiAlterada = await _vendaRepository.AtualizarVenda(vendaAtualizar);           
+            if (vendaFoiAlterada)
+            {
+                var vendaAlterada = await _vendaRepository.ObterVenda(vendaViewModel.NumeroDaVenda);
+                return Ok(vendaAlterada);
+            }
+               
+            else return BadRequest("Não foi possível Atualizar a Venda Informada");
+
+        }
+
+        [HttpDelete("{id:int}")]
+        public async Task<ActionResult<VendaViewModel>> Excluir(int id)
+        {
+          
+            var vendaFoiRemovida = await _vendaRepository.ExcluirVenda(id);
+            if (vendaFoiRemovida) return Ok(vendaFoiRemovida);
+            else return BadRequest("Não foi possível Remover a Venda Informada");            
+        }
+
+
+
     }
 }
