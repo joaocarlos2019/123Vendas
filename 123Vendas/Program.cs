@@ -1,6 +1,8 @@
 using _123Vendas.Configuration;
+using _123Vendas.Service.Handlers;
 using Asp.Versioning;
 using Microsoft.AspNetCore.Hosting;
+using Serilog;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -11,7 +13,9 @@ builder.Services.AddControllers();
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 
+
 builder.Services.AddAutoMapper(typeof(AutoMapperProfile));
+builder.Services.AddMediatR(cfg => cfg.RegisterServicesFromAssemblies(AppDomain.CurrentDomain.GetAssemblies()));
 
 builder.Services.ResolveDependencies();
 
@@ -25,6 +29,8 @@ builder.Services.AddApiVersioning(options =>
         options.GroupNameFormat = "'v'VVV";
         options.SubstituteApiVersionInUrl = true;
     });
+
+builder.Host.UseSerilog();
 
 var app = builder.Build();
 
