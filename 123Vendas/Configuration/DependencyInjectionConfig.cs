@@ -1,5 +1,6 @@
 ﻿using _123Vendas.Data;
 using _123Vendas.Data.Interfaces;
+using _123Vendas.Service;
 using System.Collections.Generic;
 
 namespace _123Vendas.Configuration
@@ -10,6 +11,7 @@ namespace _123Vendas.Configuration
         {
            
             services.AddSingleton<IVendaRepository, VendaRepository>();
+            services.AddTransient<IVendasService, VendasService>();
             return services;
         }
     }
